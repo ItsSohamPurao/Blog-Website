@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+{% block title %}Home{% endblock %} 
+{% block content %}
+<body class="text-center" style="background-color: #23272A;">
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+        <!-- Centers the form vertically and horizontally -->
+        <form method="POST" class="form-signin" style="color:white; width: 100%; max-width: 350px;">
+            <!-- Ensure form posts data correctly -->
+            <h1 class="h3 mb-3 font-weight-normal">What's on your mind today?</h1>
+            
+            <!-- Title Field -->
+            <label for="floatingInput">Title</label>
+            <input type="text" name="title" class="form-control" id="floatingInput" 
+                   style="height: 40px; background-color: #2C2F33; color: white; border: 1px solid #444;" required>
+            
+            <!-- Blog Content Field -->
+            <label for="floatingTextarea">Blog Content</label>
+            <textarea name="text" class="form-control" id="floatingTextarea" 
+                      style="height: 250px; background-color: #2C2F33; color: white; border: 1px solid #444;" required></textarea>
+            <br>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-lg btn-secondary" style="background-color: #7289DA; color: white;">Submit</button>
+        </form>
+    </div>
+</body>
+{% endblock %}
